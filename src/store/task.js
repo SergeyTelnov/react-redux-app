@@ -23,7 +23,7 @@ const taskSlice = createSlice({
     },
     remove(state, action) {
       state.entities = state.entities.filter(
-        (el) => el.id !== action.payload.id
+        (el) => el.id !== action.payload
       );
     },
     taskRequested(state) {
